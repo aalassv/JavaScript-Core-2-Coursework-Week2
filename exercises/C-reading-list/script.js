@@ -34,6 +34,12 @@ function cardPerBook(readingList) {
   readingList.forEach((element) => {
     let li = document.createElement("li");
     list.appendChild(li);
+    if (element.alreadyRead === true) {
+      li.style.backgroundColor = "green";
+    } else {
+      li.style.backgroundColor = "red";
+    }
+    li.style.borderRadius = "15px 50px 30px 5px";
 
     let titleAndAuthor = document.createElement("p");
     li.appendChild(titleAndAuthor);

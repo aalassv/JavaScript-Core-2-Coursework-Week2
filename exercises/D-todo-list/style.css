@@ -12,6 +12,12 @@ body {
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+
+/* No style to the "ul"*/
+
+ul {
+    list-style:none;
+}
 .site-footer {
   margin-top: 4em;
 }
